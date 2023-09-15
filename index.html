@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30 ejercicios prácticos</title>
+  </head>
+  <body>
+    <h1>30 ejercicios prácticos de Lizy Bravo</h1>
+    <section>
+      <h2>JavaScript</h2>
+      <div>
+        <h3>Calcular el área de un triángulo</h3>
+        <label for="base">Base:</label>
+        <input
+          type="number"
+          id="base"
+          placeholder="Ingrese la base del triangulo"
+        />
+
+        <label for="altura">Altura:</label>
+        <input
+          type="number"
+          id="altura"
+          placeholder="Ingrese la altura del triangulo"
+        />
+
+        <button onclick="calcularArea()">Calcular Área</button>
+
+        <p>El área del triángulo es: <span id="area"></span> u2</p>
+      </div>
+
+      <div>
+        <h3>Convertir grados Celsius a Fahrenheit</h3>
+        <label for="celsius">Grados Celsius:</label>
+        <input
+          type="number"
+          id="celsius"
+          placeholder="Ingrese la temperatura en grados Celsius"
+        />
+
+        <button onclick="hacerConversion()">Hacer conversion</button>
+
+        <p>
+          <span id="c"></span> grados Celsius son
+          <span id="conversion"></span> grados Fahrenheit
+        </p>
+      </div>
+
+      <div>
+        <h3>Encontrar el máximo de dos números</h3>
+        <label for="primero">Primer numero:</label>
+        <input
+          type="number"
+          id="primero"
+          placeholder="Ingrese el primer numero"
+        />
+
+        <label for="segundo">Segundo numero:</label>
+        <input
+          type="number"
+          id="segundo"
+          placeholder="Ingrese el segundo numero"
+        />
+
+        <button onclick="calcularMaximo()">Calcular</button>
+
+        <p>
+          El maximo de <span id="p"></span> y
+          <span id="s"></span> es <span id="maximo"></span>
+        </p>
+      </div>
+
+      <div>
+        <h3>Calcular el factorial de un número</h3>
+        <label for="numeroFactorial">Numero a encontrar su factorial</label>
+        <input
+          type="number"
+          id="numeroFactorial"
+          placeholder="Ingrese el numero que desea encontrar su factorial"
+        />
+
+        <button onclick="encontrarFactorial()">Encontrar factorial</button>
+
+        <p>
+          <span id="numeroIngresado"></span>! (factorial) es igual a
+          <span id="factorial"></span>.
+        </p>
+      </div>
+
+      <div>
+        <h3>Verificar sí un número es primo</h3>
+        <label for="numeroVerificar">Numero a verificar si es primo</label>
+        <input
+          type="number"
+          id="numeroVerificar"
+          placeholder="Ingrese el numero que desea verificar si es primo"
+        />
+
+        <button onclick="verificarDivisores()">Verificar Divisores</button>
+
+        <p>
+          el numero <span id="numeroVerificado"></span>
+          <span id="verificacionPrimo"></span>.
+        </p>
+      </div>
+
+      <div>
+        <h3>Revertir una cadena de texto</h3>
+        <label for="textoDeEntrada">Texto a invertir:</label>
+        <input
+          type="text"
+          id="textoDeEntrada"
+          placeholder="Ingrese el texto a invertir"
+        />
+
+        <button onclick="invertirTexto()">Invertir</button>
+
+        <p>
+          el texto "<span id="textoInicial"></span>" al reves es "
+          <span id="textoInvertido"></span>". (ahora puedes decirle a tu tia
+          que hello kitty al reves no es hola diablo)
+        </p>
+      </div>
+
+      <div>
+        <h3>Calcular la suma de los primeros N números naturales</h3>
+        <label for="rangoSuma">Numero limite para el rango de la suma:</label>
+        <input
+          type="number"
+          id="rangoSuma"
+          placeholder="Ingrese el numero limite para la suma"
+        />
+
+        <button onclick="sumarNaturales()">Sumar</button>
+
+        <p>
+          el numero <span id="sumaConsecutiva"></span> es el resultado de la
+          suma consecutiva de los primeros numeros naturales desde el numero 1 y
+          hasta el <span id="limiteSuma"></span> como rango.
+        </p>
+      </div>
+
+      <div>
+        <h3>Encontrar el elemento más grande de un arreglo</h3>
+        <label for="inputArreglo">Numeros a saber cual es el mas grande, separados por comas:</label>
+        <input
+          type="text"
+          id="inputArreglo"
+          placeholder="Ingrese los numeros a comparar"
+        />
+
+        <button onclick="EncontrarMasGrande()">Encontrar</button>
+
+        <p>
+          el numero <span id="numeroMasGrande"></span> es el numero mas grande del arreglo
+          [<span id="arregloNumeros"></span>].
+        </p>
+      </div>
+
+      <div>
+        <h3>Verificar si una palabra es un palíndromo</h3>
+        <label for="inputPalindromo">Saber si es un palindromo</label>
+        <input
+          type="text"
+          id="inputPalindromo"
+          placeholder="Ingrese los numeros a comparar"
+        />
+
+        <button onclick="seraPalindromo()">Saber</button>
+
+        <p>
+          <span id="esPalindromo"></span>.
+        </p>
+      </div>
+
+      <div>
+        <h3>Generar un número aleatorio en un rango dado</h3>
+        <label for="inputIntervaloInf">Intervalo inferior</label>
+        <input
+          type="number"
+          id="inputIntervaloInf"
+          placeholder="Ingrese intervalo inferior"
+        />
+        <label for="inputIntervaloSup">Intervalo superior</label>
+        <input
+          type="number"
+          id="inputIntervaloSup"
+          placeholder="Ingrese intervalo superior"
+        />
+
+        <button onclick="conseguirAleatorio()">Conseguir Aleatorio</button>
+
+        <p>
+          Resultado:<span id="resultadoAleatorio"></span>.
+        </p>
+      </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
